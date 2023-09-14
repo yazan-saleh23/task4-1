@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //a
+        var array=[2,3,4,5,15,7,8,9,10];
+        var evennum=0;
+        var smallnum=0;
+        for(var index=0;index<array.length;index++){
+              if(array[index]%2==0)
+              {
+                evennum=evennum+array[index];
+              }
+              if(index<5)
+              {
+                smallnum=smallnum+array[index];
+              }
+        }
+        document.write("<h2>A</h2>");
+        console.log(evennum);
+        document.writeln("evennum="+evennum+"<br>" );
+        console.log(smallnum);
+        document.writeln("smallnum="+smallnum+"<br>");
+        
+
+        document.write("<hr>");
+
+        
+        //(b)
+        var object={
+            name:'Yazan Saleh',
+            number:984104243,
+            age:19,
+            email:'yazan.f.saleh@gmail.com'
+        }
+        console.log(object);
+        console.log(object.name);
+        console.log(object.number);
+        console.log(object.age);
+        console.log(object.email);
+        document.write("<h2>B</h2>");
+        var obj=JSON.stringify(object);
+        document.writeln("Object:\t"+obj+"<br>");
+        document.writeln("Name:\t"+object.name+"<br>");
+        document.writeln("Number\t:"+object.number+"<br>");
+        document.writeln("Age:\t"+object.age+"<br>");
+        document.writeln("Email:\t"+object.email);
+        
+    </script>
+</body>
+</html>
